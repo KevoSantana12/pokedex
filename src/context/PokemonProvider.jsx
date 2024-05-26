@@ -4,7 +4,7 @@ import useForm from '../hook/useForm'
 
 const PokemonProvider = ({ children }) => {
     
-    const [pokemones, setpokemones] = useState([]);
+    const [allPokemons, setAllPokemones] = useState([]);
     const [globalPokemon, setGlobalPokemon] = useState([])
     const [offset, setOffset] = useState(0)
 
@@ -29,7 +29,7 @@ const PokemonProvider = ({ children }) => {
             return data
         })
         const results = await Promise.all(promises)
-        setpokemones([...pokemones, ...results])
+        setAllPokemones([...allPokemons, ...results])
         setLoading(false)
     }
 
@@ -73,6 +73,7 @@ const PokemonProvider = ({ children }) => {
             valueSearch,
             onInputChange,
             onResetForm,
+            allPokemons,
             getAllPokemon,
             getGlobalPokemons,
             getPokemonById
