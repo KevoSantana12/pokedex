@@ -1,5 +1,4 @@
-
-PokeIndex
+#PokeIndex
 PokeIndex is a simple web application built with React and Vite that allows users to browse and search for Pokémon. The application leverages Vite for a fast development experience and uses ESLint for code quality and consistency.
 
 Features
@@ -19,7 +18,6 @@ npm or yarn
 Installation
 Clone the repository:
 
-sh
 Copiar código
 git clone https://github.com/yourusername/pokeindex.git
 cd pokeindex
@@ -28,7 +26,6 @@ Install the dependencies:
 sh
 Copiar código
 npm install
-# or
 yarn install
 Running the Development Server
 To start the development server with hot module replacement:
@@ -36,7 +33,7 @@ To start the development server with hot module replacement:
 sh
 Copiar código
 npm run dev
-# or
+
 yarn dev
 The application will be available at http://localhost:3000.
 
@@ -46,7 +43,7 @@ To create an optimized production build:
 sh
 Copiar código
 npm run build
-# or
+
 yarn build
 The build output will be located in the dist directory.
 
@@ -56,7 +53,8 @@ To lint the project files:
 sh
 Copiar código
 npm run lint
-# or
+
+
 yarn lint
 Project Structure
 arduino
