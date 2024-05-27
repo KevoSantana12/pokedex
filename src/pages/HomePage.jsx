@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import PokeList from '../components/PokemonList'
 import PokeFilter from '../components/FilterBar'
+import PokeContext from '../context/PokemonContext'
 
 const HomePage = () => {
+	const {onClickLoadMore, active,setActive} = useContext(PokeContext)
+
 	return (
 		<>
 			<div className='container-filter container'>
-				<div className='icon-filter'>
+				<div className='icon-filter' onClick={()=>setActive(!active)}>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
 						fill='none'
@@ -26,6 +29,9 @@ const HomePage = () => {
 			</div>
 			<PokeList/>
 			<PokeFilter/>
+			<div className='container-btn-load-more container'>
+				<button className='btn-load-more' onClick={onClickLoadMore}>Carga mas</button>
+			</div>
 		</>
 	)
 }
