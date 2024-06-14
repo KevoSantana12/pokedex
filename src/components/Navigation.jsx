@@ -15,7 +15,7 @@ const Navigation = () => {
   }
   return (
     <>
-      <header className='container'>
+      <header className='container header'>
         <Link to='/' className='logo'>
           <img
             src='https://archives.bulbagarden.net/media/upload/4/4b/Pok%C3%A9dex_logo.png'
