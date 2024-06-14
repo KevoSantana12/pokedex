@@ -454,6 +454,8 @@ Styles of Pokemon Single Page
 }
 
 @media (max-width: 380px)  {
+	/*Pagina Principa */
+
 	.card-list-pokemon {
 		display: flex;
 		flex-direction: column;
@@ -489,5 +491,42 @@ Styles of Pokemon Single Page
 
 	.container-filter{
 		display: none;
+	}
+
+	/*Pokemon card */
+
+
+	.container-img-pokemon{
+		display: flex;
+		margin-left: 50px;
+	}
+
+
+	.header-main-pokemon{
+		top: -70px;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.card-types{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.number-pokemon{
+		display: none;
+	}
+
+	.container-stats{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.container-info-pokemon h1{
+		text-align: right;
+		font-size: 50px;
 	}
 }
