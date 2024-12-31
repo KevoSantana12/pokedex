@@ -3,10 +3,10 @@ import PokeContext from '../context/PokemonContext'
 
 
 const FilterBar = () => {
-  const { active, handleCheckbox } = useContext(PokeContext)
+  const { active, setActive, handleCheckbox } = useContext(PokeContext)
 
   return (
-    <div className={`container-filters ${active ? 'active':''}`}>
+    <div className={`container-filters ${active ? 'active':''}`}  onClick={()=>setActive(!active)}>
       <div className="filter-by-type">
         <span>Tipo</span>
         <div className="group-type">
